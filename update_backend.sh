@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#  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
 # rm mastercomfig-*
 # gh release download --pattern '*.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
 
