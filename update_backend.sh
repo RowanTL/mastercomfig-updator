@@ -10,7 +10,6 @@ cd "$path"
 # if there is no mastercomfig stuff in there, an error
 # will be thrown but it makes no difference
 rm mastercomfig-*
-rm readme.txt
 
 # install the proper preset
 if [ $preset -eq 1 ]
