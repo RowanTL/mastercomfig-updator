@@ -31,6 +31,9 @@ then
 elif [ $preset -eq 6 ]
 then
     gh release download --pattern 'mastercomfig-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+elif [ $preset -eq 8 ]
+then
+    gh release download --pattern 'mastercomfig-none-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
 else
     gh release download --pattern 'mastercomfig-very-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
 fi

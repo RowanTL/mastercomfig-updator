@@ -12,6 +12,7 @@ path="/home/${USER}/.local/share/Steam/steamapps/common/Team Fortress 2/tf/custo
 # 5 = Medium Low
 # 6 = Low
 # 7 = Very Low
+# 8 = None
 preset=5
 
 # For any of the addons, if an invalid number is assigned,
