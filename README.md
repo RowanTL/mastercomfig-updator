@@ -10,6 +10,6 @@ I have only tested this on Arch
 
 # Dependencies
 
-You are going to need the `gh` package to use this.
+You are going to need the `github-cli` (`gh`) package to use this.
 
-For arch: `yay -S gh`
+For arch: `yay -S github-cli`
