@@ -12,4 +12,4 @@ I have only tested this on Arch
 
 You are going to need the `gh` package to use this.
 
-For arch: `yay -Sy gh`
+For arch: `yay -S gh`
