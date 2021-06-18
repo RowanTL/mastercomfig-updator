@@ -84,3 +84,8 @@ if [ $low_mem -eq 1 ]
 then
     gh release download --pattern 'mastercomfig-lowmem-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
 fi
+
+if [ $modules -eq 1]
+then
+    gh release download --pattern 'modules_template.cfg' --repo https://github.com/mastercomfig/mastercomfig.git
+fi

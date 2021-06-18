@@ -58,4 +58,9 @@ transparent_viewmodel=0
 # 1 = Yes
 low_mem=0
 
+# Download Modules?
+# 0 = No
+# 1 = Yes
+modules=0
+
 source update_backend.sh
