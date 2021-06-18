@@ -8,8 +8,12 @@ I added some options for addons and presets. In the `update.sh` file, you will f
 
 I have only tested this on Arch
 
+Modules support soon
+
 # Dependencies
 
 You are going to need the `github-cli` (`gh`) package to use this.
+
+You are also going to need an SSH key attached to your github account as well.
 
 For arch: `yay -S github-cli`
