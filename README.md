@@ -14,6 +14,6 @@ Modules support soon
 
 You are going to need the `github-cli` (`gh`) package to use this.
 
-You are also going to need an SSH key attached to your github account as well.
+You are also going to need an SSH key attached to your github account.
 
 For arch: `yay -S github-cli`
