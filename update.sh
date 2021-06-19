@@ -13,7 +13,7 @@ path="/home/${USER}/.local/share/Steam/steamapps/common/Team Fortress 2/tf/custo
 # 6 = Low
 # 7 = Very Low
 # 8 = None
-preset=5
+preset=1
 
 # For any of the addons, if an invalid number is assigned,
 # the given Addon will not be installed
