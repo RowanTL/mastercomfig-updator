@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Going to TF2's custom directory"
-cd "$path"-
+cd "$path"
 
 # remove all of the old mastercomfig stuff just incase
 # if there is no mastercomfig stuff in there, an error
