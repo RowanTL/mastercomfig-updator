@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# rm mastercomfig-*
-# gh release download --pattern '*.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-
-# Go to custom directory
 echo "Going to TF2's custom directory"
 cd "$path"
 
@@ -12,6 +8,8 @@ cd "$path"
 # will be thrown but it makes no difference
 echo "Deleting old mastercomfig"
 echo "  If there is an error, do not worry."
+
+# TODO: check for files named mastercomfig-*
 rm mastercomfig-*
 
 # install the proper preset
@@ -19,41 +17,57 @@ if [ $preset -eq 1 ]
 then
     echo "Downloading Ultra preset"
     gh release download --pattern 'mastercomfig-ultra-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-ultra-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-ultra-preset.vpk
     echo "Installed Ultra preset"
 elif [ $preset -eq 2 ]
 then
     echo "Downloading High preset"
     gh release download --pattern 'mastercomfig-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-high-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-high-preset.vpk
     echo "Installed High preset"
 elif [ $preset -eq 3 ]
 then
     echo "Downloading Medium High preset"
     gh release download --pattern 'mastercomfig-medium-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-medium-high-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-medium-high-preset.vpk
     echo "Installed Medium High preset"
 elif [ $preset -eq 4 ]
 then
     echo "Downloading Medium preset"
     gh release download --pattern 'mastercomfig-medium-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-medium-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-medium-preset.vpk
     echo "Installed Medium preset"
 elif [ $preset -eq 5 ]
 then
     echo "Downloading Medium Low preset"
     gh release download --pattern 'mastercomfig-medium-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-medium-low-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-medium-low-preset.vpk
     echo "Installed Medium Low preset"
 elif [ $preset -eq 6 ]
 then
     echo "Downloading Low preset"
     gh release download --pattern 'mastercomfig-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    echo "Installed Low presest"
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-low-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-low-preset.vpk
+    echo "Installed Low preset"
 elif [ $preset -eq 8 ]
 then
     echo "Downloading None preset"
     gh release download --pattern 'mastercomfig-none-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-none-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-none-preset.vpk
     echo "Installed None preset"
 else
     echo "Downloading Very Low preset"
-    # gh release download --pattern 'mastercomfig-very-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    # echo "Installed Very Low preset"
+    gh release download --pattern 'mastercomfig-very-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator for linux\"" mastercomfig-very-low-preset.vpk
+    sed -i "719s/.*/https://github.com/Skrublaub/mastercomfig-updator/" mastercomfig-very-low-preset.vpk
+    echo "Installed Very Low preset"
 fi
 
 # Install Null-Cancelling Movement
@@ -147,6 +161,7 @@ then
     gh release download --pattern 'modules_template.cfg' --repo https://github.com/mastercomfig/mastercomfig.git
     mv modules_template.cfg modules.cfg # probably a better way to rename
     echo "modules.cfg downloaded, now customizing it to your preferences"
+    echo "  Do not edit modules.cfg during this process!!!"
 
     
 fi

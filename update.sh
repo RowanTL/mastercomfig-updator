@@ -13,7 +13,7 @@ path="/home/${USER}/.local/share/Steam/steamapps/common/Team Fortress 2/tf/custo
 # 6 = Low
 # 7 = Very Low
 # 8 = None
-preset=7
+preset=5
 
 # For any of the addons, if an invalid number is assigned,
 # the given Addon will not be installed
@@ -61,34 +61,38 @@ low_mem=0
 # Use Modules?
 # 0 = No
 # 1 = Yes
-modules=1
+modules=0
 
 # From this point onward, adjust the modules settings as you see fit
-# They are set to default as mastercoms made them
+# They are set to default as no choice
 
 # SourceTV
-# 0 = No
-# 1 = Yes
-sourcetv=1
+# 0 = no
+# 1 = yes
+# 2 = No Choice
+sourcetv=2
 
 # Packet Rate
 # 0 = standard
 # 1 = congested
-packet_rate=0
+# 2 = No Choice
+packet_rate=2
 
 # Snapshot Buffer
 # 0 = auto
 # 1 = low
 # 2 = safe
 # 3 = high
-snapshot_buffer=1
+# 4 = No Choice
+snapshot_buffer=4
 
 # Packet Size
 # 0 = speed
 # 1 = saver
 # 2 = safe
 # 3 = high
-packet_size=0
+# 4 = No Choice
+packet_size=4
 
 # Bandwidth
 # 0 = 8.0Mbps
@@ -104,7 +108,8 @@ packet_size=0
 # 10 = 384Kbps
 # 11 = 192Kbps
 # 12 = 128Kbps
-bandwidth=8
+# 13 = No Choice
+bandwidth=13
 
 # Download
 # 0 = auto
@@ -112,14 +117,16 @@ bandwidth=8
 # 2 =  nosounds
 # 3 = mapsonly
 # 4 = none
-download=0
+# 5 = No Choice
+download=5
 
 # LOD
 # 0 = ultra
 # 1 = high
 # 2 = medium
 # 3 = low
-lod=0
+# 4 = No Choice
+lod=4
 
 # Lighting
 # 0 = ultra
@@ -129,6 +136,84 @@ lod=0
 # 4 = medium
 # 5 = low
 # 6 = very_low
-lighting=0
+# 7 = No Choice
+lighting=7
+
+# Lighting EX
+# 0 = high
+# 1 = low
+# 2 = No Choice
+lighting_ex=2
+
+# Shadows
+# 0 = ultra
+# 1 = very_high
+# 2 = high
+# 3 = medium_high
+# 4 = medium
+# 5 = low
+# 6 = very_low
+# 7 = No Choice
+shadows=7
+
+# Effects
+# 0 = ultra
+# 1 = high
+# 2 = medium
+# 3 = low
+# 4 = No Choice
+effects=4
+
+# Water
+# 0 = ultra
+# 1 = very_high
+# 2 = high
+# 3 = medium_high
+# 4 = medium
+# 5 = low
+# 6 = very_low
+# 7 = No Choice
+water=7
+
+# Particles
+# 0 = ultra
+# 1 = high
+# 2 = medium
+# 3 = low
+# 4 = very low
+# 5 = No Choice
+particles=5
+
+# Post Processing
+# 0 = high
+# 1 = medium
+# 2 = low
+# 3 = off
+# 4 = No Choice
+post_processing=4
+
+# Pyrovision
+# 0 = high
+# 1 = medium
+# 2 = low
+# 3 = No Choice
+pyrovision=3
+
+# Motion Blur
+# 0 = high
+# 1 = low
+# 2 = off
+# 3 = No Choice
+motion_blur=3
+
+# Anti Aliasing
+# 0 = msaa_8x
+# 1 = msaa_4x
+# 2 = msaa_2x
+# 3 = off
+# 4 = No Choice
+anti_aliasing=4
+
+
 
 source update_backend.sh
