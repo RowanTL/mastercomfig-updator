@@ -62,10 +62,12 @@ low_mem=0
 # Use Modules?
 # 0 = No
 # 1 = Yes
-modules=0
+modules=1
 
 # From this point onward, adjust the modules settings as you see fit
 # They are set to default as no choice
+# No choice means that the line in the modules config file will
+# not be changed at all
 
 # SourceTV
 # 0 = no
@@ -215,6 +217,154 @@ motion_blur=3
 # 4 = No Choice
 anti_aliasing=4
 
+# Texture Filter
+# 0 = anisol6x
+# 1 = aniso8x
+# 2 = ainso4x
+# 3 = trilinear
+# 4 = bilinear
+# 5 - No Choice
+texture_filter=5
 
+# Characters
+# 0 = ultra
+# 1 = high
+# 2 = medium_high
+# 3 = medium
+# 4 = low
+# 5 = very_low
+# 6 = No Choice
+characters=6
+
+# Decals
+# 0 = ultra
+# 1 = high
+# 2 = medium
+# 3 = low
+# 5 = No Choice
+decals=5
+
+# Decals Models
+# 0 = high
+# 1 = low
+# 2 = off
+# 3 = No Choice
+decals_models=3
+
+# Decals Art
+# 0 = on
+# 1 = off
+# 2 = No Choice
+decals_art=2
+
+# Sprays
+# 0 = on
+# 1 = off
+# 2 = No Choice
+sprays=2
+
+# Gibs
+# 0 = high
+# 1 = medium
+# 2 = medium_low
+# 3 = low
+# 4 = off
+# 5 = No Choice
+gibs=5
+
+# Silly Gibs
+# 0 = auto
+# 1 = on
+# 2 = off
+# 3 = No Choice
+silly_gibs=3
+
+# Props
+# 0 = ultra
+# 1 = high
+# 2 = medium
+# 3 = low
+# 4 = No Choice
+props=4
+
+# Ragdolls
+# 0 = high
+# 1 = medium
+# 2 = off
+# 3 = hidden
+# 4 = No Choice
+ragdolls=4
+
+# 3D Sky
+# 0 = on
+# 1 = off
+# 2 = No Choice
+threedsky=2 # variable names bad to start with a number
+
+# Jigglebones
+# 0 = force_on
+# 1 = on
+# 2 = off
+# 3 = No Choice
+jigglebones=3
+
+# Sheens Speed
+# 0 = fast
+# 1 = medium
+# 2 = slow
+# 3 = off
+# 4 = No Choice
+sheens_speed=4
+
+# Sheens Tint
+# 0 = full
+# 1 = high
+# 2 = medium
+# 3 = low
+# 4 = No Choice
+sheens_tint=4
+
+# Textures
+# 0 = very high
+# 1 = high
+# 2 = medium
+# 3 = low
+# 4 = very low
+# 5 = No Choice
+textures=5
+
+# Ropes
+# 0 = ultra
+# 1 = high
+# 2 = low
+# 3 = off
+# 4 = No Choice
+ropes=4
+
+# FPS Cap
+# 0 = unlimited
+# 1 = 1000
+# 2 = 400
+# 3 = 360
+# 4 = 300
+# 5 = 240
+# 6 = 200
+# 7 = 180
+# 8 = 165
+# 9 = 160
+# 10 = 144
+# 11 = 120
+# 12 = 75
+# 13 = 60
+# 14 = 30
+# 15 = powersaver
+# 16 = No Choice
+fpscap=16
+
+# OpenGL
+# 0 = default
+# 1 = skip
+# 2 = No Choice
+opengl=2
 
 source update_backend.sh

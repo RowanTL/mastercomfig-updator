@@ -138,7 +138,6 @@ if [ "$modules" -eq 1 ]
 then
     echo "Moving to /tf/cfg"
     cd ../cfg
-    pwd
     if [[ -d "./user" ]]
     then
         echo "User folder exists, moving into it"
