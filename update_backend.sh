@@ -13,49 +13,49 @@ echo "  If there is an error, do not worry."
 rm mastercomfig-*
 
 # install the proper preset
-if [ $preset -eq 1 ]
+if [ "$preset" -eq 1 ]
 then
     echo "Downloading Ultra preset"
     gh release download --pattern 'mastercomfig-ultra-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-* # This shouldn't mess with any dire lines, only empty echo statements
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-* # Also is shameless self plugging in the console output
     echo "Installed Ultra preset"
-elif [ $preset -eq 2 ]
+elif [ "$preset" -eq 2 ]
 then
     echo "Downloading High preset"
     gh release download --pattern 'mastercomfig-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed High preset"
-elif [ $preset -eq 3 ]
+elif [ "$preset" -eq 3 ]
 then
     echo "Downloading Medium High preset"
     gh release download --pattern 'mastercomfig-medium-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium High preset"
-elif [ $preset -eq 4 ]
+elif [ "$preset" -eq 4 ]
 then
     echo "Downloading Medium preset"
     gh release download --pattern 'mastercomfig-medium-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium preset"
-elif [ $preset -eq 5 ]
+elif [ "$preset" -eq 5 ]
 then
     echo "Downloading Medium Low preset"
     gh release download --pattern 'mastercomfig-medium-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium Low preset"
-elif [ $preset -eq 6 ]
+elif [ "$preset" -eq 6 ]
 then
     echo "Downloading Low preset"
     gh release download --pattern 'mastercomfig-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
     sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Low preset"
-elif [ $preset -eq 8 ]
+elif [ "$preset" -eq 8 ]
 then
     echo "Downloading None preset"
     gh release download --pattern 'mastercomfig-none-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -71,7 +71,7 @@ else
 fi
 
 # Install Null-Cancelling Movement
-if [ $null_movement -eq 1 ]
+if [ "$null_movement" -eq 1 ]
 then
     echo "Downloading Null-Cancelling Movement addon"
     gh release download --pattern 'mastercomfig-null-cancelling-movement-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -79,7 +79,7 @@ then
 fi
 
 # Install Flat Mouse
-if [ $flat_mouse -eq 1 ]
+if [ "$flat_mouse" -eq 1 ]
 then
     echo "Downloading Flat Mouse addon"
     gh release download --pattern 'mastercomfig-flat-mouse-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -87,7 +87,7 @@ then
 fi
 
 # Install No Tutorial
-if [ $no_tutorial -eq 1 ]
+if [ "$no_tutorial" -eq 1 ]
 then
     echo "Downloading No Tutorial addon"
     gh release download --pattern 'mastercomfig-no-tutorial-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -95,7 +95,7 @@ then
 fi
 
 # Install Disable Pyroland
-if [ $pyroland -eq 1 ]
+if [ "$pyroland" -eq 1 ]
 then
     echo "Downloading Disable Pyroland addon"
     gh release download --pattern 'mastercomfig-disable-pyroland-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -103,7 +103,7 @@ then
 fi
 
 # Install No Footsteps
-if [ $footsteps -eq 1 ]
+if [ "$footsteps" -eq 1 ]
 then
     echo "Downloading No Footsteps addon"
     gh release download --pattern 'mastercomfig-no-footsteps-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -111,7 +111,7 @@ then
 fi
 
 # Install No Soundscapes
-if [ $soundscapes -eq 1 ]
+if [ "$soundscapes" -eq 1 ]
 then
     echo "Downloading No Soundscapes addon"
     gh release download --pattern 'mastercomfig-no-soundscapes-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -119,7 +119,7 @@ then
 fi
 
 # Install Transparent Viewmodel
-if [ $transparent_viewmodel -eq 1 ]
+if [ "$transparent_viewmodel" -eq 1 ]
 then
     echo "Downloading Transparent Viewmodel addon"
     gh release download --pattern 'mastercomfig-transparent-viewmodels-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
@@ -127,14 +127,14 @@ then
 fi
 
 # Install Low Memory. RIP if you have too
-if [ $low_mem -eq 1 ]
+if [ "$low_mem" -eq 1 ]
 then
     echo "Downloading Low Memory addon"
     gh release download --pattern 'mastercomfig-lowmem-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
     echo "Installed Low Memory addon. RIP"
 fi
 
-if [ $modules -eq 1 ]
+if [ "$modules" -eq 1 ]
 then
     echo "Moving to /tf/cfg"
     cd ../cfg
