@@ -16,42 +16,42 @@ fi
 case $preset in
     "1")
         echo "Downloading Ultra preset"
-        gh release download --pattern 'mastercomfig-ultra-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-ultra-preset.vpk
         echo "Installed Ultra preset"
         ;;
     "2")
         echo "Downloading High preset"
-        gh release download --pattern 'mastercomfig-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-high-preset.vpk
         echo "Installed High preset"
         ;;
     "3")
         echo "Downloading Medium High preset"
-        gh release download --pattern 'mastercomfig-medium-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-high-preset.vpk
         echo "Installed Medium High preset"
         ;;
     "4")
         echo "Downloading Medium preset"
-        gh release download --pattern 'mastercomfig-medium-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-preset.vpk
         echo "Installed Medium preset"
         ;;
     "5")
         echo "Downloading Medium Low preset"
-        gh release download --pattern 'mastercomfig-medium-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-low-preset.vpk
         echo "Installed Medium Low preset"
         ;;
     "6")
         echo "Downloading Low preset"
-        gh release download --pattern 'mastercomfig-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-low-preset.vpk
         echo "Installed Low preset"
         ;;
     "8")
         echo "Downloading None preset"
-        gh release download --pattern 'mastercomfig-none-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-none-preset.vpk
         echo "Installed None preset"
         ;;
     *)
         echo "Downloading Very Low preset"
-        gh release download --pattern 'mastercomfig-very-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-very-low-preset.vpk
         echo "Installed Very Low preset"
         ;;
 esac
@@ -63,7 +63,7 @@ sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/
 if [ "$null_movement" -eq 1 ]
 then
     echo "Downloading Null-Cancelling Movement addon"
-    gh release download --pattern 'mastercomfig-null-cancelling-movement-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-null-cancelling-movement-addon.vpk
     echo "Installed Null-Cancelling Movement addon"
 fi
 
@@ -71,7 +71,7 @@ fi
 if [ "$flat_mouse" -eq 1 ]
 then
     echo "Downloading Flat Mouse addon"
-    gh release download --pattern 'mastercomfig-flat-mouse-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-flat-mouse-addon.vpk
     echo "Installed Flat Mouse addon"
 fi
 
@@ -79,7 +79,7 @@ fi
 if [ "$no_tutorial" -eq 1 ]
 then
     echo "Downloading No Tutorial addon"
-    gh release download --pattern 'mastercomfig-no-tutorial-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-no-tutorial-addon.vpk
     echo "Installed No Tutorial addon"
 fi
 
@@ -87,7 +87,7 @@ fi
 if [ "$pyroland" -eq 1 ]
 then
     echo "Downloading Disable Pyroland addon"
-    gh release download --pattern 'mastercomfig-disable-pyroland-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-disable-pyroland-addon.vpk
     echo "Installed Disable Pyroland addon"
 fi
 
@@ -95,7 +95,7 @@ fi
 if [ "$footsteps" -eq 1 ]
 then
     echo "Downloading No Footsteps addon"
-    gh release download --pattern 'mastercomfig-no-footsteps-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-no-footsteps-addon.vpk
     echo "Installed No Footsteps addon"
 fi
 
@@ -103,7 +103,7 @@ fi
 if [ "$soundscapes" -eq 1 ]
 then
     echo "Downloading No Soundscapes addon"
-    gh release download --pattern 'mastercomfig-no-soundscapes-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-no-soundscapes-addon.vpk
     echo "Installed No Soundscapes addon"
 fi
 
@@ -111,7 +111,7 @@ fi
 if [ "$transparent_viewmodel" -eq 1 ]
 then
     echo "Downloading Transparent Viewmodel addon"
-    gh release download --pattern 'mastercomfig-transparent-viewmodels-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-transparent-viewmodels-addon.vpk
     echo "Installed Transparent Viewmodel addon "
 fi
 
@@ -119,7 +119,7 @@ fi
 if [ "$low_mem" -eq 1 ]
 then
     echo "Downloading Low Memory addon"
-    gh release download --pattern 'mastercomfig-lowmem-addon.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-lowmem-addon.vpk
     echo "Installed Low Memory addon. RIP"
 fi
 
@@ -146,7 +146,7 @@ then
         cd ./user
     fi
     echo "Downloading modules.cfg"
-    gh release download --pattern 'modules_template.cfg' --repo https://github.com/mastercomfig/mastercomfig.git
+    wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/modules_template.cfg
     mv modules_template.cfg modules.cfg # probably a better way to rename
     echo "modules.cfg downloaded, now customizing it to your preferences"
     echo "  Do not edit modules.cfg during this process!!!"
