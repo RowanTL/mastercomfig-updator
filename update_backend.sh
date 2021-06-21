@@ -4,13 +4,7 @@ echo "Going to TF2's custom directory"
 cd "$path"
 
 # remove all of the old mastercomfig stuff just incase
-
-if [[ -f "mastercomfig-*" ]]
-then
-    echo "Deleting old mastercomfig stuff but modules.cfg"
-    rm mastercomfig-*
-    echo "mastercomfig files deleted in $path"
-fi
+rm mastercomfig-*
 
 # install the proper preset
 case $preset in
