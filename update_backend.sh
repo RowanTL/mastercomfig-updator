@@ -6,69 +6,58 @@ cd "$path"
 # remove all of the old mastercomfig stuff just incase
 # if there is no mastercomfig stuff in there, an error
 # will be thrown but it makes no difference
-echo "Deleting old mastercomfig"
-echo "  If there is an error, do not worry."
 
-# TODO: check for files named mastercomfig-*
-rm mastercomfig-*
+if [[ -f "mastercomfig-*" ]]
+then
+    echo "Deleting old mastercomfig stuff but modules.cfg"
+    rm mastercomfig-*
+    echo "mastercomfig files deleted in $path"
+fi
 
 # install the proper preset
 if [ "$preset" -eq 1 ]
 then
     echo "Downloading Ultra preset"
     gh release download --pattern 'mastercomfig-ultra-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-* # This shouldn't mess with any dire lines, only empty echo statements
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-* # Also is shameless self plugging in the console output
     echo "Installed Ultra preset"
 elif [ "$preset" -eq 2 ]
 then
     echo "Downloading High preset"
     gh release download --pattern 'mastercomfig-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed High preset"
 elif [ "$preset" -eq 3 ]
 then
     echo "Downloading Medium High preset"
     gh release download --pattern 'mastercomfig-medium-high-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium High preset"
 elif [ "$preset" -eq 4 ]
 then
     echo "Downloading Medium preset"
     gh release download --pattern 'mastercomfig-medium-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium preset"
 elif [ "$preset" -eq 5 ]
 then
     echo "Downloading Medium Low preset"
     gh release download --pattern 'mastercomfig-medium-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Medium Low preset"
 elif [ "$preset" -eq 6 ]
 then
     echo "Downloading Low preset"
     gh release download --pattern 'mastercomfig-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Low preset"
 elif [ "$preset" -eq 8 ]
 then
     echo "Downloading None preset"
     gh release download --pattern 'mastercomfig-none-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed None preset"
 else
     echo "Downloading Very Low preset"
     gh release download --pattern 'mastercomfig-very-low-preset.vpk' --repo https://github.com/mastercomfig/mastercomfig.git
-    sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" mastercomfig-*
-    sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" mastercomfig-*
     echo "Installed Very Low preset"
 fi
+
+sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" ./*preset.vpk # This shouldn't mess with any dire lines, only empty echo statements
+sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" ./*preset.vpk # Also is shameless self plugging in the console output
 
 # Install Null-Cancelling Movement
 if [ "$null_movement" -eq 1 ]

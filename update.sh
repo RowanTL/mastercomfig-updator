@@ -342,7 +342,7 @@ textures=5
 ropes=4
 
 # FPS Cap
-# 0 = unlimited
+# 0 = unlimited Note: Can cause input latency
 # 1 = 1000
 # 2 = 400
 # 3 = 360
