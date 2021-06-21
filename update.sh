@@ -5,14 +5,14 @@ path="/home/${USER}/.local/share/Steam/steamapps/common/Team Fortress 2/tf/custo
 
 # Change this variable to be the preset you want
 # If invalid is chosen, very low will be selected
-# 1 = Ultra
-# 2 = High
-# 3 = Medium High
-# 4 = Medium
-# 5 = Medium Low
-# 6 = Low
-# 7 = Very Low
-# 8 = None
+# 0 = Ultra
+# 1 = High
+# 2 = Medium High
+# 3 = Medium
+# 4 = Medium Low
+# 5 = Low
+# 6 = Very Low
+# 7 = None
 preset=5
 
 
@@ -70,8 +70,8 @@ modules=1
 # not be changed at all
 
 # SourceTV
-# 0 = no
-# 1 = yes
+# 0 = on
+# 1 = off
 # 2 = No Choice
 sourcetv=2
 
@@ -117,7 +117,7 @@ bandwidth=13
 # Download
 # 0 = auto
 # 1 = all
-# 2 =  nosounds
+# 2 = nosounds
 # 3 = mapsonly
 # 4 = none
 # 5 = No Choice
@@ -366,5 +366,116 @@ fpscap=16
 # 1 = skip
 # 2 = No Choice
 opengl=2
+
+# Hud Player Model. I'm leaving on off by 
+# default because of the performance impact the 3d model makes 
+# 0 = on
+# 1 = off
+# 2 = No choice
+hud_player_model=1
+
+# Hud Panels
+# 0 = on
+# 1 = off
+# 2 = No Choice
+hud_panels=2
+
+# Match Hud
+# 0 = on
+# 1 = off
+# 2 = No Choice
+match_hud=2
+
+# Messages
+# 0 = on
+# 1 = hide
+# 2 = off
+# 3 = No Choice
+messages=3
+
+# Killfeed
+# 0 = on
+# 1 = off
+# 2 = No Choice
+killfeed=2
+
+# Killstreaks
+# 0 = high
+# 1 = low
+# 2 = off
+# 3 = No Choice
+killstreaks=3
+
+# Hud Achievement
+# 0 = on
+# 1 = off
+# 2 = No Choice
+hud_achievement=2
+
+# Console
+# 0 = on
+# 1 = off
+# 2 = No Chioce
+console=2
+
+# Outlines
+# 0 = high
+# 1 = medium
+# 2 = low
+# 3 = off
+# 4 = No Choice
+outlines=4
+
+# Dynamic Background
+# 0 = dustbowl
+# 1 = itemtest
+# 2 = preload
+# 3 = off
+# 4 = No Choice
+dynamic_background=4
+
+# Sound
+# 0 = ultra
+# 1 = very_high
+# 2 = high
+# 3 = medium
+# 4 = low
+# 5 = No Choice
+sound=5
+
+# Voice Chat
+# 0 = on
+# 1 = off
+# 2 = No Choice
+voice_chat=2
+
+# Mod Support
+# 0 = on
+# 1 = off
+# 2 = No Choice
+mod_support=2
+
+# Party Mode
+# 0 = open
+# 1 = request
+# 2 = invite
+# 3 = No Choice
+party_mode=3
+
+# Logo
+# 0 = on
+# 1 = off
+# 2 = No Chioce
+logo=2
+
+# Move Bind
+# 0 = wasd
+# 1 = esdf
+# 2 = zqsd
+# 3 = arrows
+# 4 = asdf
+# 5 = vim
+# 6 = No Choice
+move_bind=6
 
 source update_backend.sh
