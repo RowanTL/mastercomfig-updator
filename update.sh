@@ -183,7 +183,7 @@ water=7
 # 1 = high
 # 2 = medium
 # 3 = low
-# 4 = very low
+# 4 = very_low
 # 5 = No Choice
 particles=5
 
@@ -277,7 +277,7 @@ gibs=5
 # 1 = on
 # 2 = off
 # 3 = No Choice
-silly_gibs=3
+sillygibs=3
 
 # Props
 # 0 = ultra
@@ -325,7 +325,7 @@ sheens_speed=4
 sheens_tint=4
 
 # Textures
-# 0 = very high
+# 0 = very_high
 # 1 = high
 # 2 = medium
 # 3 = low
