@@ -4,7 +4,7 @@
 path="/home/${USER}/.local/share/Steam/steamapps/common/Team Fortress 2/tf/custom/"
 
 # Change this variable to be the preset you want
-# If invalid is chosen, very low will be selected
+# If an invalid number is chosen, medium low will be selected
 # 0 = Ultra
 # 1 = High
 # 2 = Medium High
@@ -359,7 +359,7 @@ ropes=4
 # 14 = 30
 # 15 = powersaver
 # 16 = No Choice
-fpscap=16
+fpscap=10
 
 # OpenGL
 # 0 = default

@@ -26,26 +26,26 @@ case "$preset" in
         echo "Downloading Medium preset"
         wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-preset.vpk
         echo "Installed Medium preset";;
-    "4")
-        echo "Downloading Medium Low preset"
-        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-low-preset.vpk
-        echo "Installed Medium Low preset";;
     "5")
         echo "Downloading Low preset"
         wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-low-preset.vpk
         echo "Installed Low preset";;
+    "6")
+        echo "Downloading Very Low preset"
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-very-low-preset.vpk
+        echo "Installed Very Low preset";;
     "7")
         echo "Downloading None preset"
         wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-none-preset.vpk
         echo "Installed None preset";;
     *)
-        echo "Downloading Very Low preset"
-        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-very-low-preset.vpk
-        echo "Installed Very Low preset";;
+        echo "Downloading Medium Low preset"
+        wget https://github.com/mastercomfig/mastercomfig/releases/latest/download/mastercomfig-medium-low-preset.vpk
+        echo "Installed Medium Low preset";;
 esac
 
-sed -i "718s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" ./*preset.vpk # This shouldn't mess with any dire lines, only empty echo statements
-sed -i "719s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" ./*preset.vpk # Also is shameless self plugging in the console output
+sed -i "703s/.*/echo\"  Updated by Skrublaub's mastercomfig updator\"/" ./*preset.vpk # This shouldn't mess with any dire lines, only empty echo statements
+sed -i "704s/.*/echo\"  https:\/\/github.com\/Skrublaub\/mastercomfig-updator\"/" ./*preset.vpk # Also is shameless self plugging in the console output
 
 # Install Null-Cancelling Movement
 if [ "$null_movement" -eq 1 ]
@@ -705,4 +705,6 @@ then
         "5")
             sed -i "194s/.*/move_bind=vim/" ./modules.cfg;;
     esac
+
+    echo "Modules complete!"
 fi
