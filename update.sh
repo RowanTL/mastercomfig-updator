@@ -73,7 +73,7 @@ modules=1
 # 0 = on
 # 1 = off
 # 2 = No Choice
-sourcetv=2
+sourcetv=0
 
 # Packet Rate
 # 0 = standard
