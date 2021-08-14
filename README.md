@@ -1,3 +1,5 @@
+# **Archiving this because I plan to rewrite this in python** 
+
 # Overview
 
 **Please do not run this while TF2 is active**
